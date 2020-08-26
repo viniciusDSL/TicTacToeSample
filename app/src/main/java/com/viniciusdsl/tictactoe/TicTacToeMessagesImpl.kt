@@ -1,8 +1,8 @@
 package com.viniciusdsl.tictactoe
 
 import android.content.Context
-import com.viniciusdsl.tictactoe.core.Player
-import com.viniciusdsl.tictactoe.core.TicTacToeMessages
+import com.viniciusdsl.tictactoe.core.model.Player
+import com.viniciusdsl.tictactoe.core.util.TicTacToeMessages
 
 class TicTacToeMessagesImpl (val context: Context) : TicTacToeMessages() {
 

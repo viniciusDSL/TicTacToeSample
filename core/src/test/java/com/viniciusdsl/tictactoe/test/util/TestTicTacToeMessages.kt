@@ -1,7 +1,7 @@
 package com.viniciusdsl.tictactoe.test.util
 
-import com.viniciusdsl.tictactoe.core.Player
-import com.viniciusdsl.tictactoe.core.TicTacToeMessages
+import com.viniciusdsl.tictactoe.core.model.Player
+import com.viniciusdsl.tictactoe.core.util.TicTacToeMessages
 
 class TestTicTacToeMessages : TicTacToeMessages() {
 

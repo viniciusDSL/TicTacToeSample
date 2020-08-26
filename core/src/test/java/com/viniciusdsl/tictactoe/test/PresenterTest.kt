@@ -1,6 +1,7 @@
 package com.viniciusdsl.tictactoe.test
 
 import com.viniciusdsl.tictactoe.core.*
+import com.viniciusdsl.tictactoe.core.util.TicTacToePosition
 import com.viniciusdsl.tictactoe.test.util.TestTicTacToeMessages
 import org.junit.Before
 import org.junit.Test

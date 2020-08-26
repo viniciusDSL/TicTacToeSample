@@ -20,9 +20,11 @@ object ResourceManager {
 
     lateinit var PENGUIN_TEXTURE: ITextureRegion
     lateinit var PARROT_TEXTURE: ITextureRegion
+    lateinit var SQUARE_TEXTURE: ITextureRegion
     lateinit var RESET_BUTTON_TEXTURE: ITiledTextureRegion
     lateinit var FONT: Font
-    private lateinit var ENGINE: Engine
+    private lateinit var engine: Engine
+    private lateinit var context: Context
 
     private fun getTiledTextureFromAsset(
         path: String,
@@ -75,15 +77,19 @@ object ResourceManager {
             fontName,
             fontSize.toFloat(),
             true,
-            Color.WHITE
+            Color.BLACK
         )
         fontRes.load()
         return fontRes
     }
 
     fun loadBasicResources(engine: Engine, activity: Activity) {
+        context = activity.applicationContext
+        this.engine = engine
 
-        ENGINE = engine
+        getTextureFromAsset("square.png", engine, activity)?.let {
+            SQUARE_TEXTURE = it
+        }
 
         getTextureFromAsset("parrot.png", engine, activity)?.let {
             PARROT_TEXTURE = it
@@ -97,10 +103,14 @@ object ResourceManager {
             RESET_BUTTON_TEXTURE = it
         }
 
-        loadFont("sans.TTF", 40, engine, activity)?.let {
+        loadFont("sans.TTF", 20, engine, activity)?.let {
             FONT = it
         }
     }
 
-    fun getVertexBuffer(): VertexBufferObjectManager = ENGINE.vertexBufferObjectManager
+    fun getVertexBuffer(): VertexBufferObjectManager = engine.vertexBufferObjectManager
+
+    fun getApplicationContext(): Context = context
+
+    fun getEngine(): Engine = engine
 }

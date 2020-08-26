@@ -1,4 +1,6 @@
-package com.viniciusdsl.tictactoe.core
+package com.viniciusdsl.tictactoe.core.model
+
+import com.viniciusdsl.tictactoe.core.util.TicTacToePosition
 
 class Game(private var gameMap: MutableList<MutableList<Int>> = emptyGame()) {
 
@@ -39,8 +41,6 @@ class Game(private var gameMap: MutableList<MutableList<Int>> = emptyGame()) {
             else -> false
         }
     }
-
-
 
     fun markPosition(position: TicTacToePosition, player: Player): Boolean{
         when (position) {

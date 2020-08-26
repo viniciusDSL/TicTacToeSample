@@ -1,5 +1,10 @@
 package com.viniciusdsl.tictactoe.core
 
+import com.viniciusdsl.tictactoe.core.model.Game
+import com.viniciusdsl.tictactoe.core.model.Player
+import com.viniciusdsl.tictactoe.core.util.TicTacToeMessages
+import com.viniciusdsl.tictactoe.core.util.TicTacToePosition
+
 class GamePresenter(private val gameMessages: TicTacToeMessages, gameView: TicTacToeView) : TicTacToePresenter(gameView){
     private val player1 = Player(1)
     private val player2 = Player(2)

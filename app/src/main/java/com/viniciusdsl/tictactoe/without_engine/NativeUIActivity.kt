@@ -1,21 +1,23 @@
 package com.viniciusdsl.tictactoe.without_engine
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.viniciusdsl.tictactoe.R
 import com.viniciusdsl.tictactoe.TicTacToeMessagesImpl
-import com.viniciusdsl.tictactoe.core.*
-import kotlinx.android.synthetic.main.activity_main.*
+import com.viniciusdsl.tictactoe.core.GamePresenter
+import com.viniciusdsl.tictactoe.core.util.TicTacToePosition
+import com.viniciusdsl.tictactoe.core.TicTacToeView
+import kotlinx.android.synthetic.main.activity_native.*
 import kotlinx.android.synthetic.main.row_layout.view.*
 
-class MainActivity : AppCompatActivity(), TicTacToeView {
+class NativeUIActivity : AppCompatActivity(), TicTacToeView {
 
     private val presenter = GamePresenter( TicTacToeMessagesImpl(this), this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_native)
 
         firstRow.textView_first_column.setOnClickListener {
             presenter.markAtPosition(TicTacToePosition.ONE)

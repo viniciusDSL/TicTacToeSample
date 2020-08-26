@@ -9,15 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".with_andengine.AndengineGameActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".without_engine.MainActivity">
-        </activity>
+        <activity android:name=".with_andengine.AndengineGameActivity"/>
+        <activity android:name=".without_engine.NativeUIActivity"/>
     </application>
 
 </manifest>
