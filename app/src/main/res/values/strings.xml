@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="error_message">No puedes ocupar una casilla ya marcada</string>
+    <string name="winner_message">Juego terminado, gana el jugador %1$d!</string>
+    <string name="draw_message">Juego terminado, empate!</string>
+    <string name="game_finished">Juego terminado, reinicia para comenzar de nuevo</string>
+    <string name="reset">Reiniciar</string>
+</resources>
