@@ -1,0 +1,7 @@
+# Tic Tac Toe 
+
+To deploy this app first you need to download **Android Studio** from [the official site.]([https://developer.android.com/studio](https://developer.android.com/studio))
+
+Game project sample using mvp, unit tests and implemented using two versions, one using native UI and the another one using Andengine.
+
+##### Apache License 2.0
