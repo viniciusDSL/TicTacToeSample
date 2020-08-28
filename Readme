@@ -2,6 +2,8 @@ Tic Tac Toe
 
 To deploy this app first you need to download **Android Studio** from [the official site.]([https://developer.android.com/studio](https://developer.android.com/studio))
 
-Game project sample using mvp, unit tests and implemented using two versions, one using native UI and the another one using Andengine.
+Game sample that uses mvp and applies some unit tests, this has two versions implemented, one using native UI and the another one using Andengine.
+
+Slides of the tech talk can be found [here.]([https://speakerdeck.com/viniciusdsl/las-ventajas-de-hacer-tests-al-desarrollar-videojuegos))
 
 Apache License 2.0
